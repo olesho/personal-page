@@ -265,14 +265,14 @@ textarea {
   top: 50%;
   right: 50px;
   transform: translateY(-50%);
-  width: 600px;
-  height: 600px;
+  width: 720px;
+  height: 720px;
   z-index: 1;
   background-image: url('../img/background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px;
+  padding: 48px;
 }
 
 .gallery-item {
@@ -282,7 +282,7 @@ textarea {
   top: 50%;
   left: 50%;
   transform-origin: center;
-  transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translateX(120px) rotate(calc(-60deg * var(--i)));
+  transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translateX(144px) rotate(calc(-60deg * var(--i)));
 }
 
 .gallery-item img {
@@ -290,12 +290,26 @@ textarea {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, padding 0.3s ease;
+}
+
+/* Make specific gallery items square and smaller */
+.gallery-item[style*="--i: 1"] img,
+.gallery-item[style*="--i: 2"] img {
+  border-radius: 0;
+  width: 66.67%;
+  height: 66.67%;
+  margin: 16.67%;
+}
+
+.gallery-item:hover {
+  z-index: 2;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.5);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scale(2);
+  padding: 0.25cm;
+  background-color: black;
 }
 
 .content-container {
