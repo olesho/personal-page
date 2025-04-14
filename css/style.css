@@ -313,7 +313,7 @@ textarea {
 }
 
 .content-container {
-  width: 50%;
+  width: 35%;
   padding: 2rem 2rem 2rem calc(2rem + 2cm);
   z-index: 1;
 }
