@@ -272,9 +272,7 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
   padding: 40px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 .gallery-item {
@@ -296,7 +294,7 @@ textarea {
 }
 
 .gallery-item:hover img {
-  transform: scale(1.2);
+  transform: scale(1.5);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
