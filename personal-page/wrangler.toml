@@ -1,9 +1,0 @@
-name = "personal-page"
-main = "dist/index.html"
-workers_dev = false
-compatibility_date = "2025-04-14"
-
-[[routes]]
-pattern = "olehluchkiv.com"
-zone_name = "olehluchkiv.com"
-custom_domain = true
