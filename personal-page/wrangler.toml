@@ -1,5 +1,5 @@
 name = "personal-page"
-main = "src/worker.js"
+main = "dist/index.html"
 workers_dev = false
 compatibility_date = "2025-04-14"
 
