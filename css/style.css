@@ -265,11 +265,12 @@ textarea {
 
 .main-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 2rem;
 }
 
 .main-content {
@@ -416,6 +417,21 @@ textarea {
 }
 
 @media only screen and (max-width: 900px) {
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .profile-image img {
+    max-width: 300px;
+    height: auto;
+  }
+
   .contact-section {
     flex-direction: column;
     gap: 2rem;
@@ -464,10 +480,13 @@ textarea {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .skills-list li {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -491,6 +510,16 @@ textarea {
   
   .skills-content {
     margin-left: 0;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-list {
+    grid-template-columns: 1fr;
   }
 }
 
